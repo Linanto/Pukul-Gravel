@@ -1,0 +1,99 @@
+body {
+    font-family: Stopbuck;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8FBC8F;
+    background-image: url('rumput.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    weight: 0;
+}
+
+header {
+    background-image: url('background.GIF');
+    padding: 20px ;
+    text-align: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#game {
+    text-align: center;
+    background-image: url('dirt.jpg');
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+#title {
+    width: 325px;
+    margin-bottom:0px;
+    padding: 0% 0%;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+button {
+    font-family: Stopbuck;
+    padding: 20px 40px;
+    margin-top: 10px;
+    background-color: #F6BDA4;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #8F5C46;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+#score {
+    margin-bottom: 10px;
+}
+
+#timer {
+    margin-bottom: 10px;
+}
+
+.hole {
+    width: 100px;
+    height: 100px;
+    background-color: #442a1f;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mole {
+    width: 80px;
+    height: 80px;
+    background-image: url(gravel.webp);
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    transition: top 0.3s;
+}
+
+.hole.up .mole {
+    top: 10px;
+}

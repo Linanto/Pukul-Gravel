@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pukul Gravel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img id="title" src="logo.png" alt="Game Title">
+    </header>
+    <div id="game">
+        <div id="score">Score: 0</div>
+        <div id="timer">Time left: 60s</div>
+        <div class="grid">
+            <div class="hole" id="hole1"><div class="mole"></div></div>
+            <div class="hole" id="hole2"><div class="mole"></div></div>
+            <div class="hole" id="hole3"><div class="mole"></div></div>
+            <div class="hole" id="hole4"><div class="mole"></div></div>
+            <div class="hole" id="hole5"><div class="mole"></div></div>
+            <div class="hole" id="hole6"><div class="mole"></div></div>
+            <div class="hole" id="hole7"><div class="mole"></div></div>
+            <div class="hole" id="hole8"><div class="mole"></div></div>
+            <div class="hole" id="hole9"><div class="mole"></div></div>
+        </div>
+        <button id="playButton">Play</button>
+        <button id="restartButton" style="display: none;">Restart</button>
+    </div>
+    <audio id="hitSound" src="punch.mp3"></audio>
+    <audio id="bgMusic" src="holiday.mp3" loop></audio>
+    <audio id="peepSound1" src="suara 1.mp3"></audio>
+    <audio id="peepSound2" src="suara 2.mp3"></audio>
+    <audio id="peepSound3" src="suara 3.mp3"></audio>
+    <script src="game.js"></script>
+</body>
+</html>
